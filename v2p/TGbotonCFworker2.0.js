@@ -81,14 +81,14 @@ command - 列出所有指令
 const kvname = elecV2P   // 保存上下文内容的 kv namespace。在 cf 上创建并绑定后自行更改
 
 let CONFIG_EV2P = {
-  name: 'elecV2P',              // bot 名称。可省略
+  name: '打工人',              // bot 名称。可省略
   store: 'elecV2PBot_CONFIG',   // 是否将当前 CONFIG 设置保存到 kv 库（运行时会自动读取并覆盖下面的设置，即下面的设置更改无效（方便更新)。建议调试时留空，调试完成后再设置回 'elecV2PBot_CONFIG' ）
   storeforce: true,     // true: 使用当前设置强制覆盖 cf kv 库中的数据，false: kv 库中有配置相关数据则读取，没有则使用当前设置运行并保存
-  url: "http://你的域名/",    // elecV2P 服务器地址(必须是域名，不能是ip，也不能跟着端口号，就是纯域名。还有末尾的斜杠不能丢下)
-  wbrtoken: '你的v2p的webhooktoken',      // 在elecV2P 服务器的 webUI->SETTING 界面查看
-  token: "你的tg机器人api token",     // 和tg上的@botfather对话创建或查询
+  url: "http:/smallmilk.v2pbot.tp/",    // elecV2P 服务器地址(必须是域名，不能是ip，也不能跟着端口号，就是纯域名。还有末尾的斜杠不能丢下)
+  wbrtoken: 'c05f3ce2-7281-4dfd-9fb3-74a3ed6e722d',      // 在elecV2P 服务器的 webUI->SETTING 界面查看
+  token: "1798783684:AAGMKnflYLOMoEPGiZvPDH61pLHV8kOhXOY",     // 和tg上的@botfather对话创建或查询
   slice: -1200,          // 截取日志最后 1200 个字符，以防太长无法传输（可自行修改）
-  userid: [],            // 你自己的tg账号的数字id，填写后机器人就只有你自己能用，别人用不了。默认空着的话，机器人会回应所有tg账号的指令。
+  userid: [1587429655],            // 你自己的tg账号的数字id，填写后机器人就只有你自己能用，别人用不了。默认空着的话，机器人会回应所有tg账号的指令。
   shell: {
     timeout: 1000*6,     // shell exec 超时时间，单位: ms
     contexttimeout: 1000*60*5,               // shell 模式自动退出时间，单位: ms
@@ -101,7 +101,7 @@ let CONFIG_EV2P = {
 }
 
 /************ 后面部分为主运行代码，若没有特殊情况，无需改动 ****************/
-
+ 
 const store = {
   put: async (key, value)=>{
     return await kvname.put(key, value)
