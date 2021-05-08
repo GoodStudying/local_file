@@ -78,7 +78,7 @@ command - 列出所有指令
  * - 如果没有设置 store，则复制除了开头的 CONFIG_EV2P 外其他所有内容到 cf worker
 **/
 
-const kvname = elecV2P   // 保存上下文内容的 kv namespace。在 cf 上创建并绑定后自行更改
+const kvname = v2p-bot   // 保存上下文内容的 kv namespace。在 cf 上创建并绑定后自行更改
 
 let CONFIG_EV2P = {
   name: '打工人',              // bot 名称。可省略
