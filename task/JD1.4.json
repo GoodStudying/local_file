@@ -77,7 +77,7 @@
   {
     "name": "5.11京东刺客567之寻宝",
     "type": "cron",
-    "time": "25 8,12 6-15 5 *",
+    "time": "25 8,12 6-11 5 *",
     "job": {
       "type": "runjs",
       "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_oppo.js"
