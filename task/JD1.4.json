@@ -237,7 +237,7 @@
   {
     "name": "京东crazyJoy挂机",
     "type": "cron",
-    "time": "10 1,12 * * *",
+    "time": "10 1 * * *",
     "job": {
       "type": "runjs",
       "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_crazy_joy_coin.js"
