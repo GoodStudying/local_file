@@ -43,8 +43,8 @@ let tuanActiveId = `mNGPTrOPluOSeZcupPI40w==`;
 const jxOpenUrl = `openjd://virtual?params=%7B%20%22category%22:%20%22jump%22,%20%22des%22:%20%22m%22,%20%22url%22:%20%22https://wqsd.jd.com/pingou/dream_factory/index.html%22%20%7D`;
 let cookiesArr = [], cookie = '', message = '', allMessage = '';
 const inviteCodes = [
-  'RhXtja-WxzNcFDL5eeOiag==',
-  "RhXtja-WxzNcFDL5eeOiag==",
+  'RhXtja-WxzNcFDL5eeOiag==@7ieSejtFM5V7FuECQMyS9Q==',
+  "RhXtja-WxzNcFDL5eeOiag==@7ieSejtFM5V7FuECQMyS9Q==",
   'RhXtja-WxzNcFDL5eeOiag==',
   'RhXtja-WxzNcFDL5eeOiag=='
 ];
