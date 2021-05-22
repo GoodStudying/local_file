@@ -50,7 +50,7 @@
             "time":"10 0 * * * ",
             "job":{
                 "type":"runjs",
-                "target":"https://raw.githubusercontent.com/GoodStudying/local_file/main/task/v2p_task/jdzz.js"
+                "target":"https://raw.githubusercontent.com/GoodStudying/local_file/main/task/v2p_task/jd_jdzz.js"
             },
             "running":true
         },
