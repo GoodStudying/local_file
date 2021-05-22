@@ -14,7 +14,7 @@ $.userName = '';
 !(async () => {
   if (!getCookies()) return;
   if (!getTokens()) return;
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 4; i++) {
     $.currentCookie = $.cookieArr[i];
     $.currentToken = $.tokenArr[i];
     if ($.currentCookie) {
