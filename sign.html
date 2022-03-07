@@ -3,29 +3,28 @@
 <head>
 	<meta charset="utf-8" />
 	<title>跳转登录</title>
+	
+	<body>
+		<div style="width:1000px; height:50px; text-align:center; line-height:150px;">
+			<div>
+				<button><a id="login" href="#"><h1>点击登录跳转app</h1></a></button>
+			</div>
+			<div id="wx"></div>
+		</div>
+		<script>
+			function load() {
+				let search = window.location.search
+				search = search.substring(1,search.length)
+				document.getElementById("login").setAttribute("href","dtxuexi://appclient/page/study_feeds?url="+search)
+				document.getElementById("login").click()
+			}
+			load()
+		</script>
 	<!-- <link rel="stylesheet" type="text/css" href="index.css"/> -->
-  
-  
-<body>
-<div>
-    <button><a id="login" href="#"><h1>点击登录跳转学习强国app</h1></a></button>
-</div>
-<div id="wx"></div>
 
-</body>
-<script>
-    function load() {
-        let search = window.location.search
-        search = search.substring(1,search.length)
-        document.getElementById("login").setAttribute("href","dtxuexi://appclient/page/study_feeds?url="+search)
-        document.getElementById("login").click()
-    }
-    load()
+		</body>
+		
 
-</script>
-  
-  
-  
 	<style>
 		html,
 		body {
@@ -380,11 +379,11 @@
 	</style>
 </head>
 <body>
-  <p class="word1">右上角默认浏览器打开</p>
-  <p class="word2">建议先点击我的</p>
-  <p class="word2">查看今日积分</p>
-  <p class="word2">验证账号时效</p>
-  <p class="word2">再点击开始学xi</p>
+	<p class="word1">右上角默认浏览器打开</p>
+    <p class="word2">建议先点击我的</p>
+    <p class="word2">查看今日积分</p>
+    <p class="word2">验证账号时效</p>
+    <p class="word2">再点击开始学xi</p>
 	<div class="tree">
 		<div class="star">
 			<div class="star-in"></div>
@@ -444,10 +443,11 @@
 			<div></div>
 		</div>
 	</div>
-	  <p class="word">不忘初心，方得始终！</p>
+    <p class="word">不忘初心，方得始终！</p>
         <script>
       window.location.href =
         'dtxuexi://appclient/page/study_feeds' + window.location.search
     </script>
 </body>
+
 </html>
