@@ -3,26 +3,19 @@
 <head>
 	<meta charset="utf-8" />
 	<title>跳转登录</title>
-	<!-- <link rel="stylesheet" type="text/css" href="index.css"/> -->
-
+	
 	<body>
-		<div style="width:1000px; height:50px; text-align:center; line-height:150px;">
+		<div style="width:1500px; height:50px; text-align:center; line-height:150px;">
 			<div>
 				<button><a id="login" href="#"><h1>点击登录跳转学习app</h1></a></button>
 			</div>
 			<div id="wx"></div>
 		</div>
 		
+	<!-- <link rel="stylesheet" type="text/css" href="index.css"/> -->
+
 		</body>
-		<script>
-			function load() {
-				let search = window.location.search
-				search = search.substring(1,search.length)
-				document.getElementById("login").setAttribute("href","dtxuexi://appclient/page/study_feeds?url="+search)
-				document.getElementById("login").click()
-			}
-		load()
-		</script>
+		
 
 	<style>
 		html,
@@ -443,5 +436,18 @@
 		</div>
 	</div>
     <p class="word">不忘初心，方得始终！</p>
+        <script>
+      window.location.href =
+        'dtxuexi://appclient/page/study_feeds' + window.location.search
+    </script>
+	<script>
+		function load() {
+			let search = window.location.search
+			search = search.substring(1,search.length)
+			document.getElementById("login").setAttribute("href","dtxuexi://appclient/page/study_feeds?url="+search)
+			document.getElementById("login").click()
+		}
+		load()
+	</script>
 </body>
 </html>
